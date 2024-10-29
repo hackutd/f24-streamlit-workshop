@@ -57,7 +57,7 @@ fl = st.file_uploader("Upload a file", type=["csv", "txt"])
 print("File:", fl)
 
 #Choose a animation here: https://lottiefiles.com/featured
-import streamlit_lottie as st_lottie
+from streamlit_lottie import st_lottie # for animations
 lottie_url = "https://lottie.host/4a8322b4-981b-4d72-8309-0adbb6305351/a4zyCyhizk.json"
 st_lottie(lottie_url, width=200, height=200)
 
