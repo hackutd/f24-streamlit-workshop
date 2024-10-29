@@ -49,3 +49,16 @@ with c2:
         color='weather', 
         legend='bottom', 
         use_container_width=True)
+
+### EXTRA
+value = st.toggle("<-- toggle button") # Question: How do you move this button the sidebar?
+print("Value:", value)
+fl = st.file_uploader("Upload a file", type=["csv", "txt"])
+print("File:", fl)
+
+#Choose a animation here: https://lottiefiles.com/featured
+import streamlit_lottie as st_lottie
+lottie_url = "https://lottie.host/4a8322b4-981b-4d72-8309-0adbb6305351/a4zyCyhizk.json"
+st_lottie(lottie_url, width=200, height=200)
+
+# Deploy the app to Streamlit Community Cloud
